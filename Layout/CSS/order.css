@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins:wght@500&display=swap');
+@import url(/CSS/header.css);
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+i {
+    width: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 15px;
+    margin: 20px;
+}
+
+.container .cart-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+

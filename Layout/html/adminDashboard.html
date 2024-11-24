@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/CSS/dashboardstyle.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"/>
+    <link rel="shortcut icon" href="/Images/logo.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Sidebar by Coding2GO @ YouTube  -->
+    <nav class="sidebar">
+        <ul>
+          <li>
+            <span class="logo">STI UNIFROM MANAGEMENT SYSTEM</span>
+            <button onclick="toggleSideBar()" id="toggle-btn">
+              <i class="bx bx-menu"></i>
+            </button>
+          </li>
+          <li class="active">
+            <a href="#">
+              <i class="bx bxs-dashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <button onclick="toggleSubClass(this)" class="dropdown-btn">
+                <i class='bx bxs-folder' ></i>
+                <span>Manage</span>
+                <i class='bx bxs-down-arrow' ></i>
+            </button>
+            <ul class="subclass">
+              <div>
+                <li><a href="#">Inventory</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Cancellation</a></li>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <button onclick="toggleSubClass(this)" class="dropdown-btn">
+                <i class='bx bx-history' ></i>
+                <span>History</span>
+                <i class='bx bxs-down-arrow' ></i>
+            </button>
+            <ul class="subclass">
+              <div>
+                <li><a href="#">Damage & Tracking</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Cancellation</a></li>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+                <i class='bx bxs-report' ></i>
+              <span>Report and Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-file' ></i>
+              <span>Audit Log</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- The Main Content -->
+      <main>
+        <div class="container">
+            <h1>Welcome to Dashboard</h1>
+            <p>
+                Where you can view the orders.
+            </p>
+        </div>
+        <div class="container">
+            <h1>Another Container</h1>
+            <p>Hi</p>
+        </div>
+      </main>
+
+
+      <script src="/JS/script.js"></script>
+  </body>
+</html>

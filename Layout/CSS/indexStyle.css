@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins:wght@500&display=swap');
+@import url(/CSS/header.css);
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+#sect1 {
+    height: 28vh;
+    text-align: center;
+    background: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+#sect1 h1 {
+    font-size: 2.5rem;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#features{
+    padding: 20px;
+    background: #F8F9FA;
+    height: 43vh;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+    align-items: center;
+}
+
+
+.feature {
+    width: 22%;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 150px;
+}
+
+.feature a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.feature:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

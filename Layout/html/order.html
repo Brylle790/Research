@@ -1,85 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order</title>
-    <link rel="stylesheet" href="/CSS/order.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
+    <link rel="stylesheet" href="/CSS/order.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">STI</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="order.html">Order Uniform</a></li>
-                <li><a href="viewInventory.html">View Inventory</a></li>
-                <li><a href="trackOrders.html">Track Orders</a></li>
-            </ul>
-        </nav>
-        <a href="#" id="login-btn">Login</a>
+      <div class="logo">STI</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.html">Order Uniform</a></li>
+          <li><a href="viewInventory.html">View Inventory</a></li>
+          <li><a href="trackOrders.html">Track Orders</a></li>
+        </ul>
+      </nav>
+      <a href="#" id="login-btn">Login</a>
     </header>
 
     <main>
-        <div class="container">
-            <div class="title">
-                <p>Uniforms</p>
-            </div>
-            <div class="cart-icon">
-                <i class='bx bxs-cart-alt bx-md' id="cart-icon"></i>
-                <span>0</span>
-            </div>
+      <div class="container">
+        <div class="title">
+          <p>Uniforms</p>
+        </div>
+        <div class="cart-icon">
+          <i class="bx bxs-cart-alt bx-md" id="cart-icon"></i>
+          <span>0</span>
+        </div>
+      </div>
+
+      <div class="cart-container"></div>
+      <div class="cart-section" id="cart-section">
+        <div class="cart-header">
+          <h2>Your cart</h2>
+          <i class="bx bx-left-arrow-alt" id="close-cart"></i>
         </div>
 
-
-
-        <div class="cart-container"> 
-            </div> 
-            <div class="cart-section" id="cart-section">
-                 <div class="cart-header"> 
-                    <h2>Your cart</h2> 
-                    <i class='bx bx-left-arrow-alt' id="close-cart"></i>
-                 </div> 
-
-                <div class="cart-content" id="cart-content">
-                    <div class="cart-item"> 
-                        <img src="https://via.placeholder.com/50" alt="Product Image"> 
-                        <div>
-                             <p>Product Name</p>
-                             <p>Qty.<i class='bx bx-chevron-left'></i><span>1</span><i class='bx bx-chevron-right'></i></p> 
-                        </div> <i class='bx bx-trash'></i>
-                    </div>
-                    <div class="cart-item"> 
-                        <img src="https://via.placeholder.com/50" alt="Product Image"> 
-                        <div>
-                             <p>Product Name</p>
-                             <p>Qty.<i class='bx bx-chevron-left'></i><span>1</span><i class='bx bx-chevron-right'></i></p> 
-                        </div> <i class='bx bx-trash' id="delete-item"></i>
-                    </div>
-                    <div class="cart-item"> 
-                        <img src="https://via.placeholder.com/50" alt="Product Image"> 
-                        <div>
-                             <p>Product Name</p>
-                             <p>Qty.<i class='bx bx-chevron-left'></i><span>1</span><i class='bx bx-chevron-right'></i></p> 
-                        </div> <i class='bx bx-trash'></i>
-                    </div> 
-                    <div class="cart-item"> 
-                        <img src="https://via.placeholder.com/50" alt="Product Image"> 
-                        <div>
-                             <p>Product Name</p>
-                             <p>Qty.<i class='bx bx-chevron-left'></i><span>1</span><i class='bx bx-chevron-right'></i></p> 
-                        </div> <i class='bx bx-trash'></i>
-                    </div>
-                </div> 
-                
-                <div class="cart-footer"> 
-                    <button onclick="clearAll()">Clear All</button> 
-                    <button>Checkout</button> 
-                </div> 
+        <div class="cart-content" id="cart-content">
+          <div class="cart-item">
+            <img src="https://via.placeholder.com/50" alt="Product Image" />
+            <div>
+              <p>Product Name</p>
+              <p>
+                Qty.<i class="bx bx-chevron-left"></i><span>1</span
+                ><i class="bx bx-chevron-right"></i>
+              </p>
+            </div>
+            <i class="bx bx-trash"></i>
+          </div>
+          <div class="cart-item">
+            <img src="https://via.placeholder.com/50" alt="Product Image" />
+            <div>
+              <p>Product Name</p>
+              <p>
+                Qty.<i class="bx bx-chevron-left"></i><span>1</span
+                ><i class="bx bx-chevron-right"></i>
+              </p>
+            </div>
+            <i class="bx bx-trash" id="delete-item"></i>
+          </div>
+          <div class="cart-item">
+            <img src="https://via.placeholder.com/50" alt="Product Image" />
+            <div>
+              <p>Product Name</p>
+              <p>
+                Qty.<i class="bx bx-chevron-left"></i><span>1</span
+                ><i class="bx bx-chevron-right"></i>
+              </p>
+            </div>
+            <i class="bx bx-trash"></i>
+          </div>
+          <div class="cart-item">
+            <img src="https://via.placeholder.com/50" alt="Product Image" />
+            <div>
+              <p>Product Name</p>
+              <p>
+                Qty.<i class="bx bx-chevron-left"></i><span>1</span
+                ><i class="bx bx-chevron-right"></i>
+              </p>
+            </div>
+            <i class="bx bx-trash"></i>
+          </div>
         </div>
+
+        <div class="cart-footer">
+          <button onclick="clearAll()">Clear All</button>
+          <button>Checkout</button>
+        </div>
+      </div>
     </main>
 
     <script src="/JS/cartScript.js"></script>
-</body>
+  </body>
 </html>

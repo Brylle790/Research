@@ -1,28 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins:wght@500&display=swap");
 @import url(/CSS/header.css);
 
 * {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.cart-section {
+  background-color: #002b5c;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  right: -300px;
+  top: 11.3vh; 
+  height: calc(100% - 88px);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: right 0.3s ease;
+  overflow: auto;
+}
+.cart-section.open {
+  right: 0;
+}
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-header i {
+  cursor: pointer;
+}
+.cart-content {
+  flex: 1;
+  overflow-y: auto;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.cart-item img {
+  width: 50px;
+  height: auto;
+}
+.cart-footer button {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
 i {
-    width: 30px;
+  width: 30px;
 }
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    padding: 20px 15px;
-    margin: 20px;
-}
-
-.container .cart-icon {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-

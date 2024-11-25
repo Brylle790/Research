@@ -55,6 +55,13 @@ main p {
 
 .sidebar ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sidebar ul li:last-child {
+    margin-top: auto;
 }
 
 .sidebar > ul > li:first-child {
@@ -145,4 +152,3 @@ main p {
 .sidebar .subclass a {
     padding-left: 2em;
 }
-

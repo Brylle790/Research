@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #002a45;
+}
+
 .loginBox {
   display: flex;
   justify-content: center;
@@ -17,18 +21,20 @@
 form {
   height: 300px;
   width: 420px;
-  background: rgba(255, 255, 255, 0.28);
-  border-radius: 16px;
+  background-color: #FFB915;
+  /* background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.9px);
-  -webkit-backdrop-filter: blur(1.9px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(0.9px);
+  -webkit-backdrop-filter: blur(0.9px); */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 
 .loginText {
   font-size: 30px;
   font-weight: 800;
   text-align: center;
+  padding-top: 10px;
 }
 
 form .input-box {
@@ -69,6 +75,10 @@ form button {
   background: transparent;
   border: 1px solid #000;
   border-radius: 10px;
+}
+
+.loginBox form a {
+  text-decoration: none;
 }
 
 form button:hover {

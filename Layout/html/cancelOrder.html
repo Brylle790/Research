@@ -19,5 +19,27 @@
         </nav>
         <a href="#" id="login-btn">Login</a>
     </header>
+
+    <main>
+        <div class="cancelOrder">
+          <p class="title">Request Order Cancellation</p>
+          <form action="" method="post">
+            <input
+              type="text"
+              name="orderID"
+              id="orderID"
+              placeholder="Enter your Order ID (e.g Order-4568)"
+              required
+            />
+            <textarea
+              name="reason"
+              id="cancelReason"
+              placeholder="Put your reason here"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+    </main>
+
 </body>
 </html>

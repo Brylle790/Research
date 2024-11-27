@@ -1,2 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins:wght@500&display=swap');
 @import url(/CSS/header.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Poppins:wght@500&display=swap');
+@import url(/CSS/header.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+main {
+    margin: 0;
+    height: 60vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.cancelOrder {
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+.cancelOrder form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #003F66;
+    border: 2px solid #e6e1e1;
+    padding: 40px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    text-align: center;
+}
+
+form textarea{
+    height: 60px;
+}
+
+.cancelOrder form textarea, form input, form input:focus{
+    width: 50vh;
+    border: 2px solid #e6e1e1;
+    outline: none;
+}
+
+form button {
+    display: block;
+    width: 50vh;
+    border: none;
+    background-color: #FFB915;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+textarea {
+    height: 20px;
+    resize: none;
+}
